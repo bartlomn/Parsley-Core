@@ -44,7 +44,6 @@
     <orderEntry type="library" exported="" name="livecycle-libs" level="project" />
     <orderEntry type="library" exported="" name="libs" level="project" />
     <orderEntry type="module" module-name="Spicelib-Commands-Library" exported="" />
-    <orderEntry type="module" module-name="Spicelib-XML-Mapper-Library" exported="" />
   </component>
 </module>
 
