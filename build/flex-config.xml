@@ -32,20 +32,9 @@
 	    <debug>true</debug>
 	    
 	</compiler>
-	
-  	<include-namespaces>
-    	<uri>http://www.spicefactory.org/parsley</uri>
-  	</include-namespaces>
-  	
+
   	<include-classes>
 	    <class>FlexSupportClasses</class>
   	</include-classes>
   	
-  	<include-file>
-  		<name>design.xml</name>
-  		<path>${project}/src/flex/design.xml</path>
-  	</include-file>
-  	    
-  	<output>${release}/parsley-flex-${version}.swc</output>
-	    
 </flex-config>

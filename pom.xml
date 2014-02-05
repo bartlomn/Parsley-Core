@@ -60,7 +60,7 @@
    </dependencies>
 
    <build>
-      <sourceDirectory>src/core/kernel-api</sourceDirectory>
+      <sourceDirectory>src/core/toolbox</sourceDirectory>
       <plugins>
          <plugin>
             <groupId>net.flexmojos.oss</groupId>
@@ -69,12 +69,32 @@
             <extensions>true</extensions>
             <configuration>
                <debug>true</debug>
-               <showWarnings>false</showWarnings>
                <includeSources>
-                  <source>src/core/toolbox</source>
+                  <source>src/core/kernel-api</source>
                   <source>src/flex</source>
                   <source>src/xml</source>
                </includeSources>
+               <includes>
+                  <include>FlexSupportClasses</include>
+                  <include>ConfigurationClasses</include>
+                  <include>XmlSupportClasses</include>
+               </includes>
+               <includeFiles>
+                  <include>${basedir}/src/flex/design.xml</include>
+               </includeFiles>
+               <loadConfigs>
+                  <config>${basedir}/build/core-config.xml</config>
+                  <config>${basedir}/build/core-metadata.xml</config>
+               </loadConfigs>
+               <namespaces>
+                  <namespace>
+                     <uri>http://www.spicefactory.org/parsley</uri>
+                     <manifest>${basedir}/build/core-manifest.xml</manifest>
+                  </namespace>
+               </namespaces>
+               <includeNamespaces>
+                  <namespace>http://www.spicefactory.org/parsley</namespace>
+               </includeNamespaces>
             </configuration>
             <dependencies>
                <dependency>
